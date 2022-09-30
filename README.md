@@ -1,6 +1,26 @@
 ## Let Xplore - Saturday Hacknight TinkerHub 
 ### Open CV
 
+#### Cropping
+```
+img = img[10:300,250:300]
+```
+
+#### Drawing Lines
+```
+img = np.zeros((512,512,3),np.uint8)
+cv.line(img,(0,0),(512,512),(0,255,255),5)
+cv.line(img,(0,512),(512,0),(0,255,255),5)
+```
+#### Drawing Shapes
+```
+img = np.zeros((512,512,3),np.uint8)
+cv.rectangle(img,(10,10),(250,350),(255,0,255),cv.FILLED)
+cv.circle(img,(256,256),100,(255,255,0),cv.FILLED)
+cv.putText(img,"OPEN CV",(100,100),cv.FONT_HERSHEY_COMPLEX,2,(0,100,0),2)
+```
+
+
 #### Warp Perspective
 ```
 import cv2 as cv
